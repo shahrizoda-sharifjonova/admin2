@@ -3,10 +3,223 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 <body>
-    
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light container">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Все эксперты</a>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Объекты
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Объекты</a></li>
+                      <li><a class="dropdown-item" href="#">Объекты</a></li>
+                      <li><a class="dropdown-item" href="#">Объекты</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Организации
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Организации</a></li>
+                      <li><a class="dropdown-item" href="#">Организации</a></li>
+                      <li><a class="dropdown-item" href="#">Организации</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Биржа
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Биржа</a></li>
+                      <li><a class="dropdown-item" href="#">Биржа</a></li>
+                      <li><a class="dropdown-item" href="#">Биржа</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Профсообщество
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Профсообщество</a></li>
+                      <li><a class="dropdown-item" href="#">Профсообщество</a></li>
+                      <li><a class="dropdown-item" href="#">Профсообщество</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <div class="header__contacts">
+                    <a href="#!" class="header__call"><img src="img/header-icon-1.svg" alt=""></a>
+                    <a href="#!" class="header__username"><img src="img/header-user.svg" alt="">Иванова А.И.</a>
+                    <a href="#!" class="header__settings"><img src="img/header-settings.svg" alt=""></a>
+                    <button class="btn btn-outline-success" type="submit">Выйти</button>
+                </div>
+            </div>
+          </nav>
+    </header>
+    <main>
+        <section class="cabinets">
+            <div class="cabinets__body container">
+                <div class="cabinets__top">
+                    <p class="cabinets__title">Кабинет проекта</p>
+                    <div class="cabinets__right">
+                        <div class="cabinets__right-top">   
+                            <p class="cabinets__right-title">Место на диске</p>
+                            <p class="cabinets__right-p">200 мб из 500 мб</p>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="cabinets__right-texts">
+                            <p class="cabinets__right-text">Заказчик</p>
+                            <p class="cabinets__right-text">Петров А.А. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cabinets__buttons">
+                    <button type="button" class="cabinets__button">Ключ</button>
+                    <div class="cabinets__buttons-content">
+                        <button type="button" class="cabinets__btn">
+                            <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 0H1C0.447733 0 0 0.447733 0 1C0 1.55227 0.447733 2 1 2H9C9.55227 2 10 1.55227 10 1C10 0.447733 9.55227 0 9 0Z" fill="#1F1F1F"/>
+                                <path d="M9 4H1C0.447733 4 0 4.44773 0 5C0 5.55227 0.447733 6 1 6H9C9.55227 6 10 5.55227 10 5C10 4.44773 9.55227 4 9 4Z" fill="#1F1F1F"/>
+                            </svg>                                    
+                        </button>
+                        <button type="button" class="cabinets__btn cabinets__btn_dark">
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.4272 4.1617H6.45668C6.24504 4.1617 6.07332 3.98998 6.07332 3.77834V2.75104C6.07332 2.53939 6.24504 2.36768 6.45668 2.36768H12.4272C12.6388 2.36768 12.8105 2.53939 12.8105 2.75104V3.77834C12.8105 3.98998 12.6388 4.1617 12.4272 4.1617Z" fill="white"/>
+                                <path d="M9.9854 7.89687H4.01462C3.80297 7.89687 3.63126 7.72515 3.63126 7.51351V6.4862C3.63126 6.27456 3.80297 6.10284 4.01462 6.10284H9.98512C10.1968 6.10284 10.3685 6.27456 10.3685 6.4862V7.51351C10.3685 7.72542 10.197 7.89687 9.9854 7.89687Z" fill="white"/>
+                                <path d="M7.54332 11.6323H1.57281C1.36117 11.6323 1.18945 11.4606 1.18945 11.2489V10.2216C1.18945 10.01 1.36117 9.83826 1.57281 9.83826H7.54332C7.75496 9.83826 7.92668 10.01 7.92668 10.2216V11.2489C7.92668 11.4606 7.75496 11.6323 7.54332 11.6323Z" fill="white"/>
+                            </svg>                                    
+                        </button>
+                        <button type="button" class="cabinets__btn">
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 1.17084V2.90117V3.37308V12.8292H14V3.37308V2.90117V1.17084H0ZM8.70413 8.73336H5.29587V6.52513H8.70413V8.73336ZM9.64795 6.52513H13.0562V8.73336H9.64795V6.52513ZM8.70413 9.67718V11.8854H5.29587V9.67718H8.70413ZM0.94382 6.52513H4.35205V8.73336H0.94382V6.52513ZM5.29587 5.58131V3.37308H8.70413V5.58131H5.29587ZM4.35205 3.37308V5.58131H0.94382V3.37308H4.35205ZM0.94382 9.67718H4.35205V11.8854H0.94382V9.67718ZM9.64795 11.8854V9.67718H13.0562V11.8854H9.64795ZM13.0562 5.58131H9.64795V3.37308H13.0562V5.58131Z" fill="black"/>
+                            </svg>                                                                     
+                        </button>
+                        <button type="button" class="cabinets__btn">
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1802_78)">
+                                <path d="M13.0658 6.34735H11.3815V7.57588H12.7715V11.6197H7.57587V10.8056H6.34738V11.9141C6.34738 12.43 6.76565 12.8483 7.28158 12.8483H13.0658C13.5818 12.8483 14 12.43 14 11.9141V7.28155C14 6.76562 13.5818 6.34735 13.0658 6.34735Z" fill="black"/>
+                                <path d="M10.8263 9.31626V4.68371C10.8263 4.16778 10.4081 3.74951 9.89213 3.74951H8.2078V4.97804H9.59784V9.02189H4.4022V8.20775H3.17368V9.31622C3.17368 9.83216 3.59194 10.2504 4.10787 10.2504H9.89213C10.4081 10.2505 10.8263 9.83219 10.8263 9.31626Z" fill="black"/>
+                                <path d="M7.65265 6.71848V2.08593C7.65265 1.57 7.23439 1.15173 6.71846 1.15173H0.934198C0.418264 1.15173 0 1.57 0 2.08593V6.71848C0 7.23441 0.418264 7.65268 0.934198 7.65268H6.71846C7.23439 7.65264 7.65265 7.23441 7.65265 6.71848ZM6.42413 6.42412H1.22853V2.38026H6.42416V6.42412H6.42413Z" fill="black"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_1802_78">
+                                <rect width="14" height="14" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>                                                                                                
+                        </button>
+                        <button type="button" class="cabinets__btn">
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.1904 13.2811C2.02977 13.2808 1.87115 13.2453 1.72572 13.1771C1.53613 13.0902 1.37566 12.9504 1.26356 12.7745C1.15147 12.5987 1.09251 12.3942 1.09377 12.1856V3.5C1.0941 3.21002 1.20943 2.93201 1.41448 2.72696C1.61953 2.52191 1.89754 2.40658 2.18752 2.40625H11.8125C12.1025 2.40658 12.3805 2.52191 12.5855 2.72696C12.7906 2.93201 12.9059 3.21002 12.9062 3.5V10.5C12.9059 10.7899 12.7906 11.068 12.5855 11.273C12.3805 11.4781 12.1025 11.5934 11.8125 11.5937H4.59135L2.89129 13.0229C2.69554 13.1891 2.44721 13.2806 2.1904 13.2811ZM2.40626 3.71875V11.716L3.80784 10.5377L3.80795 10.5376C4.00512 10.3722 4.25426 10.2814 4.51167 10.2812H11.5937V3.71875H2.40626Z" fill="black"/>
+                            </svg>                                                                                                                                    
+                        </button>
+                    </div>
+                </div>
+                <div class="cabinets__list">
+                    <p class="cabinets__list-title">Список заинтересованных лиц</p>
+                    <div class="cabinets__list-content">
+                        <button type="button" class="cabinets__list-button"><img src="img/cabinets-plus.svg" alt=""></button>
+                        <button type="button" class="cabinets__list-btn">Геологи<img src="img/cabinets-close.svg" alt=""></button>
+                        <button type="button" class="cabinets__list-btn">Застройщики<img src="img/cabinets-close.svg" alt=""></button>
+                        <button type="button" class="cabinets__list-btn">Геодезисты<img src="img/cabinets-close.svg" alt=""></button>
+                        <button type="button" class="cabinets__list-btn">Проектировщики<img src="img/cabinets-close.svg" alt=""></button>
+                    </div>
+                </div>
+                <div class="cabinets__filter">
+                    <p class="cabinets__filter-title">Назначить экспертов</p>
+                    <div class="cabinets__filter-buttons">
+                        <button type="button" class="cabinets__filter-btn active">РИИ</button>
+                        <button type="button" class="cabinets__filter-btn">ПД</button>
+                        <button type="button" class="cabinets__filter-btn">Смета</button>
+                    </div>
+                    <div class="cabinets__filter-dropdowns">
+                        <button type="button" class="cabinets__filter-button"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_1802_90)">
+                            <path d="M0.0603254 5.13352L3.88696 8.96124L5.31727 7.53134L1.49064 3.70362L0.0603254 5.13352Z" fill="white"/>
+                            <path d="M4.66866 8.17033L10.0789 2.76013L8.55329 1.23456L3.14309 6.64476L4.66866 8.17033Z" fill="white"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_1802_90">
+                            <rect width="10" height="10" fill="white"/>
+                            </clipPath>
+                            </defs>
+                            </svg>
+                            Назначить
+                        </button>
+                        <p class="cabinets__filter-p">Фильтры</p>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                Сортировать по
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                              <li><a class="dropdown-item" href="#">Алфавиту</a></li>
+                              <li><a class="dropdown-item" href="#">Алфавиту</a></li>
+                              <li><a class="dropdown-item" href="#">Алфавиту</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="cabinets__row"> 
+                    <div class="cabinets__content">
+                        <div class="cabinets__content-top">
+                            <p class="cabinets__content-title">Раздел</p>
+                            <p class="cabinets__content-title">Эксперт</p>
+                            <p class="cabinets__content-title">Статус</p>
+                            <p class="cabinets__content-title">Таймер</p>
+                        </div>
+                        <div class="cabinets__content-item">
+                            <div class="cabinets__item-content cabinets__item_1">
+                                <input type="checkbox" name="checkbox" id="checkbox1">
+                                <label for="checkbox1" class="cabinets__content-label">ИГДИ</label>
+                            </div> 
+                            <div class="cabinets__item-content cabinets__item_2">
+                                <div class="dropdown dropdown_1">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Иванова А.И.
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                      <li><a class="dropdown-item" href="#">Иванова А.И.</a></li>
+                                      <li><a class="dropdown-item" href="#">Иванова А.И.</a></li>
+                                      <li><a class="dropdown-item" href="#">Иванова А.И.</a></li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown dropdown_2">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.625 2.5C8.625 3.12132 8.12132 3.625 7.5 3.625C6.87868 3.625 6.375 3.12132 6.375 2.5C6.375 1.87868 6.87868 1.375 7.5 1.375C8.12132 1.375 8.625 1.87868 8.625 2.5ZM8.625 7.5C8.625 8.12132 8.12132 8.625 7.5 8.625C6.87868 8.625 6.375 8.12132 6.375 7.5C6.375 6.87868 6.87868 6.375 7.5 6.375C8.12132 6.375 8.625 6.87868 8.625 7.5ZM7.5 13.625C8.12132 13.625 8.625 13.1213 8.625 12.5C8.625 11.8787 8.12132 11.375 7.5 11.375C6.87868 11.375 6.375 11.8787 6.375 12.5C6.375 13.1213 6.87868 13.625 7.5 13.625Z" fill="black"/>
+                                        </svg>                                            
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                      <li><a class="dropdown-item" href="#">Добавить</a></li>
+                                      <li><a class="dropdown-item" href="#">Удалить</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="cabinets__content-item">
+                                <div class="cabinets__item-content cabinets__item_1">
+                                    <input type="checkbox" name="checkbox" id="checkbox1">
+                                    <label for="checkbox1" class="cabinets__content-label">ИГДИ</label>
+                                </div> 
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>
